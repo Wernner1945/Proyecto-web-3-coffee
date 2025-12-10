@@ -1,0 +1,153 @@
+/* From Uiverse.io by nikk7007 */ 
+.btnBuscar {
+ --color: #4f00a9;
+ --color2: rgb(175, 175, 175);
+ padding: 0.8em 1.75em;
+ background-color: transparent;
+ border-radius: 6px;
+ border: .3px solid var(--color);
+ transition: .5s;
+ position: relative;
+ margin: 10px;
+ overflow: hidden;
+ cursor: pointer;
+ z-index: 1;
+ font-weight: 300;
+ font-size: 17px;
+ font-family: 'Roboto', 'Segoe UI', sans-serif;
+ text-transform: uppercase;
+ color: var(--color);
+}
+
+.btnBuscar::after, .btn::before {
+ content: '';
+ display: block;
+ height: 100%;
+ width: 100%;
+ transform: skew(90deg) translate(-50%, -50%);
+ position: absolute;
+ inset: 50%;
+ left: 25%;
+ z-index: -1;
+ transition: .5s ease-out;
+ background-color: var(--color);
+}
+
+.btnBuscar::before {
+ top: -50%;
+ left: -25%;
+ transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btnBuscar:hover::before {
+ transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btnBuscar:hover::after {
+ transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btnBuscar:hover {
+ color: var(--color2);
+}
+
+.btnBuscar:active {
+ filter: brightness(.7);
+ transform: scale(.98);
+}
+
+.btnVolver{
+    
+ --color: #00A97F;
+ --color2: rgb(10, 25, 30);
+ padding: 0.8em 1.75em;
+ background-color: transparent;
+ border-radius: 6px;
+ border: .3px solid var(--color);
+ transition: .5s;
+ position: relative;
+ overflow: hidden;
+ cursor: pointer;
+ z-index: 1;
+ font-weight: 300;
+ font-size: 17px;
+ font-family: 'Roboto', 'Segoe UI', sans-serif;
+ text-transform: uppercase;
+ color: var(--color);
+}
+
+
+.btnVolver::after, .btn::before {
+ content: '';
+ display: block;
+ height: 100%;
+ width: 100%;
+ transform: skew(90deg) translate(-50%, -50%);
+ position: absolute;
+ inset: 50%;
+ left: 25%;
+ z-index: -1;
+ transition: .5s ease-out;
+ background-color: var(--color);
+}
+
+.btnVolver::before {
+ top: -50%;
+ left: -25%;
+ transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btnVolver:hover::before {
+ transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btnVolver:hover::after {
+ transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btnVolver:hover {
+ color: var(--color2);
+}
+
+.btnVolver:active {
+ filter: brightness(.7);
+ transform: scale(.98);
+}
+
+
+form {
+    font-family: sans-serif;
+    font-size: 22px;
+}
+
+label{
+    margin: 10px;
+}
+.input {
+    height: 35px;
+}
+
+.detalle_container {
+    display: flex;
+}
+
+.detalle {
+
+    margin: 20px auto;
+ padding: 10px;
+ display: inline-block;
+ background: #3405a3;
+ border-radius: 15px;
+ box-shadow: 1px 5px 60px 0px #100a886b;
+}
+.detalle > h3 {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+
+.detalle > p {
+    font-size: 15px;
+    color: white;
+}

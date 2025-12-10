@@ -1,0 +1,327 @@
+:root{
+    
+    font-family: sans-serif;
+}
+
+.tabla-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+table {
+    width: 90%;
+    max-width: 1100px;
+    border-collapse: collapse;
+    font-family: var(--fontTexto);
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+thead {
+    background-color: var(--azul);
+    color: white;
+}
+
+th {
+    padding: 14px 12px;
+    font-size: 1.6rem;
+    text-align: left;
+    letter-spacing: .5px;
+}
+
+td {
+    padding: 12px 10px;
+    font-size: 1.5rem;
+    color: #333;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+tbody tr:hover {
+    background-color: #f4f8ff;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+
+
+
+
+ 
+.butonCrear {
+ font-size: 17px;
+ padding: 0.5em 2em;
+ border: transparent;
+ box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+ background: dodgerblue;
+ color: white;
+ border-radius: 4px;
+}
+
+.butonCrear:hover {
+ background: rgb(2,0,36);
+ background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgb(17, 70, 80) 100%);
+}
+
+.butonCrear:active {
+ transform: translate(0em, 0.2em);
+}
+
+.butonObtener{
+margin-left: 15px;
+ font-size: 17px;
+ padding: 0.5em 2em;
+ border: transparent;
+ box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+ background: rgb(22, 158, 27);
+ color: white;
+ border-radius: 4px;
+}
+
+.butonObtener:hover {
+ background: rgb(2,0,36);
+}
+
+.butonObtener:active {
+ transform: translate(0em, 0.2em);
+}
+
+.butonEditar {
+
+    font-size: 17px;
+    margin-left: 16px;
+    padding: 0.5em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: rgb(124, 22, 158);
+    color: white;
+    border-radius: 4px;
+}
+
+
+.butonEditar:hover {
+ background: rgb(2,0,36);
+}
+
+.butonEditar:active {
+ transform: translate(0em, 0.2em);
+}
+
+.butonEliminar {
+
+    font-size: 17px;
+    margin-left: 16px;
+    padding: 0.5em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: rgba(169, 3, 14, 0.988);
+    color: white;
+    border-radius: 4px;
+}
+
+
+.butonEliminar:hover {
+ background: rgb(2,0,36);
+}
+
+.butonEliminar:active {
+ transform: translate(0em, 0.2em);
+}
+
+
+.butonpdf {
+ display: inline-block;
+ position: relative;
+ padding: 10px 25px;
+ background-color: #4CC713;
+ color: white;
+ font-family: sans-serif;
+ text-decoration: none;
+ font-size: 0.9em;
+ text-align: center;
+ text-indent: 15px;
+ border: none;
+}
+
+.butonpdf:hover {
+ background-color: #45a21a;
+ color: white;
+}
+
+.butonpdf:before, .buttonDownload:after {
+ content: ' ';
+ display: block;
+ position: absolute;
+ left: 15px;
+ top: 52%;
+}
+
+.butonpdf:before {
+ width: 10px;
+ height: 2px;
+ border-style: solid;
+ border-width: 0 2px 2px;
+}
+
+.butonpdf:after {
+ width: 0;
+ height: 0;
+ margin-left: 3px;
+ margin-top: -7px;
+ border-style: solid;
+ border-width: 4px 4px 0 4px;
+ border-color: transparent;
+ border-top-color: inherit;
+ animation: downloadArrow 1s linear infinite;
+ animation-play-state: paused;
+}
+
+.butonpdf:hover:before {
+ border-color: #cdefbd;
+}
+
+.butonpdf:hover:after {
+ border-top-color: #cdefbd;
+ animation-play-state: running;
+}
+
+.butonsContainer{
+    display: flex;
+    gap: 10px;
+}
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 11px 30px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: greenyellow;
+  box-shadow: 0 0 0 2px greenyellow;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: greenyellow;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: greenyellow;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px greenyellow;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+
+
+@keyframes downloadArrow {
+ 0% {
+  margin-top: -7px;
+  opacity: 1;
+ }
+
+ 0.001% {
+  margin-top: -15px;
+  opacity: 0.4;
+ }
+
+ 50% {
+  opacity: 1;
+ }
+
+ 100% {
+  margin-top: 0;
+  opacity: 0.4;
+ }
+}
+
+
+
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 10px 6px;
+        font-size: 1.4rem;
+    }
+
+    .btn-accion {
+        padding: 6px 14px;
+        margin-bottom: 4px;
+        display: block;
+    }
+}

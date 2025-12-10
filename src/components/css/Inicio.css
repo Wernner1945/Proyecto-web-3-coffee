@@ -1,0 +1,21 @@
+.inicio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.inicio-title {
+    font-size: 3rem;
+    color: black;
+    font-weight: bold;
+    font-family: 'Staatliches', cursive;
+}
+img {
+    width: 500px;
+    height: 400px;
+}

@@ -1,0 +1,41 @@
+.list_container {
+    position: absolute;
+    top:40px;
+    right: 90px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 160px;
+    justify-content: space-evenly;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #eee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #1b4297 ;
+
+}
+
+.list_container > li {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+}
+
+
+.list_container li > a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: auto;
+    color: #eee;
+}
+
+.list_container > li:hover {
+    background-color: rgb(47, 47, 224);
+    color: #031a4a;
+}
+
+.list_container li > a:hover{
+    color: #eee;
+}
